@@ -1,12 +1,9 @@
 # 什么是微服务？微服务之间是如何独立通讯的？
 
-- Author：[HuiFer](https://github.com/huifer)
-- Description：介绍微服务的定义以及服务间的通信。
-
 ## 什么是微服务
 
-- 微服务架构是一个分布式系统，按照业务进行划分成为不同的服务单元，解决单体系统性能等不足。
-- 微服务是一种架构风格，一个大型软件应用由多个服务单元组成。系统中的服务单元可以单独部署，各个服务单元之间是松耦合的。
+-   微服务架构是一个分布式系统，按照业务进行划分成为不同的服务单元，解决单体系统性能等不足。
+-   微服务是一种架构风格，一个大型软件应用由多个服务单元组成。系统中的服务单元可以单独部署，各个服务单元之间是松耦合的。
 
 > 微服务概念起源：[Microservices](https://martinfowler.com/articles/microservices.html)
 
@@ -76,7 +73,6 @@ RPC(Remote Procedure Call)远程过程调用，简单的理解是一个节点请
 首先需要一个服务端：
 
 ```java
-
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -183,7 +179,6 @@ public class RPCServer {
 其次需要一个客户端：
 
 ```java
-
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.lang.reflect.InvocationHandler;
@@ -257,10 +252,6 @@ public class TinterfaceImpl implements Tinterface {
 测试代码如下：
 
 ```java
-
-import com.huifer.admin.rpc.Tinterface;
-import com.huifer.admin.rpc.TinterfaceImpl;
-
 import java.net.InetSocketAddress;
 
 
